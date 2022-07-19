@@ -1,5 +1,5 @@
 #include "sort.h"
-​
+
 /**
  * selection_sort - sorts an array of integers in
  * ascending order using the Selection sort
@@ -13,7 +13,7 @@ void selection_sort(int *array, size_t size)
 {
 	int tmp;
 	size_t i, j, m;
-​
+
 	for (i = 0; i < size; i++)
 	{
 		m = i;
@@ -22,7 +22,7 @@ void selection_sort(int *array, size_t size)
 			if (array[m] > array[j])
 				m = j;
 		}
-​
+
 		if (i != m)
 		{
 			tmp = array[i];
